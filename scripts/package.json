@@ -1,11 +1,11 @@
 {
-  "name": "test",
+  "name": "awesome-books",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "watchsass": "sass --watch scss/main.scss/main.css",
   },
   "keywords": [],
   "author": "",
@@ -26,6 +26,9 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.19.0",
+  },
+  "dependencies": {
+    "breakpoint-sass": "^2.7.1"
   }
 
 }
