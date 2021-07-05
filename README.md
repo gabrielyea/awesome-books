@@ -1,10 +1,10 @@
 ](https://img.shields.io/badge/Microverse-blueviolet)
 
 # JAVASCRIPT PROJECT: AWESOME BOOKS
-A awesome-books page created using Javascript's DOM manipulation and npm's WebPack that includes a home, menu and contact sections.
+A website where users can add or remove books from a list was created using javascript's object, arrays DOM manipulation, and event listeners. A basic user interface was built using plain HTML. 
 
 ## LIVE DEMO
-[!Live Demo](https://pizzeria-d-amerioo.netlify.app/)
+[!Live Demo]()
 
 ## Built With
 - HTML5
