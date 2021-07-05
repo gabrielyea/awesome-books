@@ -27,9 +27,9 @@ form {
   justify-content: center;
   align-items: center;
 }
-
 .book-list-element hr {
   width: 250px;
+  margin: 1em;
 }
 
 body {
