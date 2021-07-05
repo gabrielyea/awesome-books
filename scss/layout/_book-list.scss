@@ -1,0 +1,18 @@
+@use '../utils' as *;
+
+.book-list {
+  @include flexCenter;
+
+  gap: 1em;
+  margin: 1em;
+  list-style: none;
+}
+
+.book-list-element {
+  @include flexCenter;
+
+  hr {
+    width: 250px;
+    margin: 1em;
+  }
+}

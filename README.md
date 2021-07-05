@@ -1,60 +1,63 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Description
+# JAVASCRIPT PROJECT: AWESOME BOOKS
+A website where users can add or remove books from a list was created using javascript's object, arrays DOM manipulation, and event listeners. A basic user interface was built using plain HTML.
 
+## LIVE DEMO
+[Live Demo!](https://microverse-awesome-books.netlify.app/)
 
 ## Built With
-- css
-- html
-- sass
-- javaScript
+- HTML5
+- CSS
+- Javascript
+- Lots of love :heart:
 
-## Live Demo
-You can see my page live here: 
-[Check it out!](https://gabrielyea.github.io/module1-capstone/)
+## Getting Started
+To get a local copy up and running follow these simple example steps:
+- Open Terminal.
+- Change the current working directory to the location you want the cloned directory.
+- Enter the following:
+```
+$ git clone git@github.com:amiraabouhadid/awesome-books.git.
 
+```
+- Press Enter to create your local clone.
+- run ```cd awesome-books```
+- now you an open the project with any code editor and go live or simply open your localhost in the browser.
 
-<!--## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- GitHub
+- Git
 
-### Setup
+## Author:
 
-### Install
+ 👤 **Amira Abouhadid**
 
-### Usage
+ - GitHub: [@amiraabouhadid](https://github.com/amiraabouhadid)
+ - Twitter: [@AbouhadidAmira](https://twitter.com/AbouhadidAmira)
+ - LinkedIn: [amira-abouhadid](https://www.linkedin.com/in/amira-abouhadid/)
 
-### Run tests
+ 👤 **Gabriel Rendon*
 
-### Deployment-->
-
-
-## Authors
-
-👤 **Gabriel Rendon*
-
-- GitHub: [@gabrielyea](https://github.com/gabrielyea)
-
+ - GitHub: [@gabrielyea](https://github.com/gabrielyea)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues and feature requests are welcome!
 
-<!--Feel free to check the [issues page](../../issues/).-->
+Feel free to check the [issues page](https://github.com/amiraabouhadid/awesome-books/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-<!--## Acknowledgments-->
+## Acknowledgments
+
+- Microverse
+- The Odin Project
+
+## 📝 MIT License
 
 
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://mit-license.org/) licensed.[CC](https://creativecommons.org/licenses/by-nc/4.0/)

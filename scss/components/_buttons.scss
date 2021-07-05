@@ -6,13 +6,13 @@
   width: 60%;
   border: none;
   padding: 1em;
-  margin: 2em 0 2em 0;
+  margin: 2em 1em;
 }
 
 hr {
   color: $main-theme-color;
   width: 2em;
-  margin: 0.5em auto;
+  margin: 2em;
   border-bottom: $main-theme-color 2px solid;
   border-top: none;
   text-align: center;
@@ -71,8 +71,8 @@ hr {
 .btn-2 {
   background-color: transparent;
   border: solid rgba(151, 151, 151, 0.5) 2px;
-  margin: 0.5em;
-  padding: 1em;
+  margin: 2em;
+  padding: 1.5em;
   width: 95%;
   border-radius: 4px;
 }
