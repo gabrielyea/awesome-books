@@ -12,7 +12,6 @@ export default class BookUtilities {
     storage.saveBookData(bookList.getList);
   }
 
-  // Callback function added in createBookElement to click event
   removeBook = (id) => {
     bookList.removeBookFromList(id);
     this.displayAllBooks();
@@ -27,10 +26,6 @@ export default class BookUtilities {
       this.removeBook(id);
     });
     return clone;
-  }
-
-  displayBook = () => {
-
   }
 
   displayAllBooks = () => {
