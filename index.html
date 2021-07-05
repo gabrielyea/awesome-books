@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Title - Gabriel Rendon</title>
   <meta name="description" content="">
@@ -10,8 +10,30 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="home theme-normal">
+<body>
 
+  <header>
+    <h1>Awesome Books!</h1>
+  </header>
+
+  <section>
+    <h2>All books</h2>
+    <ul class="book-list">
+      <template class="book-template">
+        <li>
+          <p class="book-title">blabla</p>
+          <p class="book-author">blbibli</p>
+          <button class="book-remove-btn">Remove</button>
+        </li>
+      </template>
+    </ul>
+  </section>
+
+  <form method="post">
+    <input type="text" name="title" placeholder="Title">
+    <input type="text" name="author" placeholder="Author">
+    <input type="submit" value="Add">
+  </form>
   <script type="module" src="scripts/main.js"></script>
 </body>
 
