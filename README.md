@@ -1,10 +1,10 @@
 ](https://img.shields.io/badge/Microverse-blueviolet)
 
 # JAVASCRIPT PROJECT: AWESOME BOOKS
-A website where users can add or remove books from a list was created using javascript's object, arrays DOM manipulation, and event listeners. A basic user interface was built using plain HTML. 
+A website where users can add or remove books from a list was created using javascript's object, arrays DOM manipulation, and event listeners. A basic user interface was built using plain HTML.
 
 ## LIVE DEMO
-[!Live Demo]()
+[!Live Demo](https://microverse-awesome-books.netlify.app/)
 
 ## Built With
 - HTML5
@@ -23,7 +23,7 @@ $ git clone git@github.com:amiraabouhadid/awesome-books.git.
 ```
 - Press Enter to create your local clone.
 - run ```cd awesome-books```
-- now you an open the project with any code editor and go live or simply open the ./dist/index.html page with the browser.
+- now you an open the project with any code editor and go live or simply open your localhost in the browser.
 
 
 ### Prerequisites
