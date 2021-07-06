@@ -4,7 +4,9 @@
 A website where users can add or remove books from a list was created using javascript's object, arrays DOM manipulation, and event listeners. A basic user interface was built using plain HTML.
 
 ## LIVE DEMO
-[Live Demo!](https://microverse-awesome-books.netlify.app/)
+[Live Demo Netfly!](https://microverse-awesome-books.netlify.app/)
+
+[Live Demo Github Pages!](https://gabrielyea.github.io/awesome-books/)
 
 ## Built With
 - HTML5
@@ -38,7 +40,7 @@ $ git clone git@github.com:amiraabouhadid/awesome-books.git.
  - Twitter: [@AbouhadidAmira](https://twitter.com/AbouhadidAmira)
  - LinkedIn: [amira-abouhadid](https://www.linkedin.com/in/amira-abouhadid/)
 
- 👤 **Gabriel Rendon*
+ 👤 **Gabriel Rendon**
 
  - GitHub: [@gabrielyea](https://github.com/gabrielyea)
 
