@@ -2,7 +2,7 @@ class BookList {
   bookList = [];
 
   addBookToList = (book) => {
-    this.bookList.push(book);
+    this.bookList = this.bookList.concat(book);
   }
 
   removeBookFromList = (id) => {
