@@ -4,14 +4,18 @@
   padding: 0;
 }
 
-form {
+.center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.books-container h2 {
+.book-list {
+  width: 100%;
+}
+
+h2 {
   text-align: center;
 }
 
@@ -24,10 +28,6 @@ form {
 }
 
 .books-container .book-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border: 1px solid black;
   border-radius: 4px;
   gap: 1em;
@@ -36,11 +36,11 @@ form {
 }
 
 .books-container .book-list-element {
-  display: flex;
-  align-items: center;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  margin: 0 5em;
+  padding: 1em;
 }
 
 .books-container hr {
@@ -48,20 +48,11 @@ form {
   margin: 2em;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .btn-1 {
   background-color: #ea4f36;
   border-radius: 4px;
-  width: 60%;
   border: none;
   padding: 1em;
-  margin: 2em 1em;
+  margin: 1em 0;
+  align-self: flex-end;
 }
-
-/*# sourceMappingURL=main.css.map */
