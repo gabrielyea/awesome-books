@@ -1,5 +1,49 @@
-@use './base' as *;
-@use './layout/' as *;
-@use './pages/' as *;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.books-container h2 {
+  text-align: center;
+}
+.books-container .book-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  gap: 1em;
+  padding: 1em;
+  list-style: none;
+}
+.books-container .book-list-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.books-container hr {
+  width: 250px;
+  margin: 2em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=main.css.map */

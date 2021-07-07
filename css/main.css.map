@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,kBAAkB;AAClB,qBAAqB;AACrB,oBAAoB",
-"sources": ["../scss/main.scss"],
-"names": [],
-"file": "main.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/base/_resets.scss","../scss/layout/_form.scss","../scss/utils/_variables.scss","../scss/layout/_book-list.scss","../scss/pages/_home.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;ACDF;ECyBE;EACA,gBAF2B;EAG3B;EACA;;;AC3BA;EACE;;AAGF;EDoBA;EACA,gBAF2B;EAG3B;EACA;ECpBE;EACA;EACA;EACA;EACA;;AAGF;EDUA;EACA,gBAF2B;EAG3B;EACA;ECVE;EACA;EACA;;AAGF;EACE;EACA;;;ACzBJ;EFyBE;EACA,gBAF2B;EAG3B;EACA","file":"main.css"}
