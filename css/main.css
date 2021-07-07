@@ -37,8 +37,6 @@ form {
 
 .books-container .book-list-element {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
