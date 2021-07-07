@@ -1,5 +1,7 @@
 import bookList from './book-list.js';
+import listeners from './listeners.js';
 import storage from './localStorage.js';
+import Book from './book.js';
 
 // Utility class, Manages DOM elements, displays the books, adds functionality to buttons.
 export default class BookUtilities {
@@ -7,18 +9,17 @@ export default class BookUtilities {
   bookTemplate = document.getElementById('book-template');
 
   templateTarget = document.querySelector('.book-list');
+
+  form = document.querySelector('form');
+
   // ---------------------------
 
   /**
- * Creates an id for the book.
  * Adds the book to the bookList.
  * Saves the data on localStorage.
- *
- * @param {Book} book an object type of Book, destructured.
  */
-  saveBook = ({ title, author }) => {
-    const id = bookList.getList.length;
-    bookList.addBookToList({ id, title, author });
+  saveBook = () => {
+    bookList.addBookToList(this.getBookData());
     storage.saveBookData(bookList.getList);
   }
 
@@ -44,11 +45,9 @@ export default class BookUtilities {
  */
   createBookElement = ({ id, title, author }) => {
     const clone = this.bookTemplate.content.firstElementChild.cloneNode(true);
-    clone.querySelector('.book-title').innerText = title;
-    clone.querySelector('.book-author').innerText = author;
-    clone.querySelector('.book-remove-btn').addEventListener('click', () => {
-      this.removeBook(id);
-    });
+    const btn = clone.querySelector('.book-remove-btn');
+    clone.querySelector('.book-desc').innerText = `${title} by, ${author}`;
+    listeners.onClickEvent(btn, { callback: this.removeBook, param: id });
     return clone;
   }
 
@@ -67,7 +66,12 @@ export default class BookUtilities {
     }
   }
 
-  // TODO:
-  // Maby create a custom event: OnListChange to manage all functions that get called
-  // every time the list is modified, it will decouple the code more.
+  /**
+ * Returns a book filled with data.
+ * @return {Book} a book object with properties filled.
+ */
+  getBookData = () => {
+    const book = new Book(bookList.getList.length, this.form.title.value, this.form.author.value);
+    return book;
+  }
 }

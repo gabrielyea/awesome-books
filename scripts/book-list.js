@@ -1,4 +1,4 @@
-// Warp class, adds extra functionality to the array of books
+// Wrap class, adds extra functionality to the array of books
 class BookList {
   bookList = [];
 
