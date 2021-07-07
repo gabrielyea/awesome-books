@@ -5,6 +5,14 @@
     text-align: center;
   }
 
+  li:nth-child(odd) {
+    background: red;
+  }
+
+  li:nth-child(even) {
+    background: blue;
+  }
+
   .book-list {
     @include flexCenter;
 
@@ -26,15 +34,5 @@
   hr {
     width: 250px;
     margin: 2em;
-  }
-}
-
-.books-container {
-  li:nth-child(odd) {
-    background: red;
-  }
-
-  li:nth-child(even) {
-    background: blue;
   }
 }
