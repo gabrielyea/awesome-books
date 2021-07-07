@@ -14,12 +14,15 @@ form {
 .books-container h2 {
   text-align: center;
 }
+
 .books-container li:nth-child(odd) {
   background: antiquewhite;
 }
+
 .books-container li:nth-child(even) {
   background: darkgrey;
 }
+
 .books-container .book-list {
   display: flex;
   flex-direction: column;
@@ -31,6 +34,7 @@ form {
   padding: 1em;
   list-style: none;
 }
+
 .books-container .book-list-element {
   display: flex;
   flex-direction: column;
@@ -40,6 +44,7 @@ form {
   justify-content: space-between;
   width: 100%;
 }
+
 .books-container hr {
   width: 250px;
   margin: 2em;
