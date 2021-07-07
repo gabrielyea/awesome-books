@@ -52,4 +52,13 @@ body {
   align-items: center;
 }
 
+.btn-1 {
+  background-color: #ea4f36;
+  border-radius: 4px;
+  width: 60%;
+  border: none;
+  padding: 1em;
+  margin: 2em 1em;
+}
+
 /*# sourceMappingURL=main.css.map */
