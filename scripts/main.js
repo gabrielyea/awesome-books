@@ -10,12 +10,6 @@ listeners.onSubmitEvent(form,
   { callback: bookUtilities.saveBook },
   { callback: bookUtilities.displayAllBooks });
 
-// form.addEventListener('submit', (source) => {
-//   bookUtilities.saveBook(new Book(null, form.title.value, form.author.value));
-//   bookUtilities.displayAllBooks();
-//   source.preventDefault();
-// });
-
 window.addEventListener('load', () => {
   storage.loadInputData();
   bookUtilities.displayAllBooks();
