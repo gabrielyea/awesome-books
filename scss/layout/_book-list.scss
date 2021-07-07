@@ -16,3 +16,13 @@
     margin: 1em;
   }
 }
+
+.books-container {
+  li:nth-child(odd) {
+    background: red;
+  }
+
+  li:nth-child(even) {
+    background: blue;
+  }
+}
