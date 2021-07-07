@@ -46,8 +46,7 @@ export default class BookUtilities {
   createBookElement = ({ id, title, author }) => {
     const clone = this.bookTemplate.content.firstElementChild.cloneNode(true);
     const btn = clone.querySelector('.book-remove-btn');
-    clone.querySelector('.book-title').innerText = title;
-    clone.querySelector('.book-author').innerText = author;
+    clone.querySelector('.book-desc').innerText = `${title} by, ${author}`;
     listeners.onClickEvent(btn, { callback: this.removeBook, param: id });
     return clone;
   }
