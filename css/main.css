@@ -15,10 +15,10 @@ form {
   text-align: center;
 }
 .books-container li:nth-child(odd) {
-  background: red;
+  background: antiquewhite;
 }
 .books-container li:nth-child(even) {
-  background: blue;
+  background: darkgrey;
 }
 .books-container .book-list {
   display: flex;
