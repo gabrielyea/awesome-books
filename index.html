@@ -11,13 +11,20 @@
 </head>
 
 <body class="center">
-  <section class="books-container center">
+  <nav>
+    <ul>
+      <li><a id="test" href="#all-books">all books</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="all-books" class="books-container center hide">
     <h1>All Awesome books</h1>
     <ul class="book-list center">
       <template id="book-template">
         <li class="book-list-element center">
           <p class="book-desc">blabla</p>
-          <button class="book-remove-btn">Remove</button>
+          <button class="book-remove-btn btn-1">Remove</button>
         </li>
       </template>
     </ul>
@@ -26,8 +33,8 @@
   <section class="input-container center hide">
     <h2>Add new book</h2>
     <form class="center" method="post">
-      <input type="text" name="title" placeholder="Title" required>
-      <input type="text" name="author" placeholder="Author" required>
+      <input class="input" type="text" name="title" placeholder="Title" required>
+      <input class="input" type="text" name="author" placeholder="Author" required>
       <input class="btn-1" type="submit" value="Add">
     </form>
   </section>
@@ -37,9 +44,9 @@
     <p>Do you have any questions or just want to say "Hello"?<br>
     You can reach out to us!</p>
     <ul class="contact-information-list center">
-      <li>Our email: emailBlabla@blabla.com</li>
-      <li>Our phone number: 000000000000000</li>
-      <li>Our address: In dolore duis non ea cupidatat aute Lorem. Ullamco officia non enim ea quis labore laborum nostrud eu.</li>
+      <li class="contact-list-element">Our email: emailBlabla@blabla.com</li>
+      <li class="contact-list-element">Our phone number: 000000000000000</li>
+      <li class="contact-list-element">Our address: In dolore duis non ea cupidatat aute Lorem. Ullamco officia non enim ea quis labore laborum nostrud eu.</li>
     </ul>
   </section>
 

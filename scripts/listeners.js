@@ -12,7 +12,7 @@ class Listeners {
    * Register click event with optional parameters.
    * The event will launch the callbacks in the options arguments.
    * @param {Object} eventSource Is a DOM object that can submit data.
-   * @param {options} options Is an object, {options:callback, options:param}.
+   * @param {options} options Is an object, {callback:funName, param:any}.
    */
   onClickEvent = (eventSource, options) => {
     eventSource.addEventListener('click', () => {
@@ -25,7 +25,7 @@ class Listeners {
    * with optional parameters.
    * The event will launch the callbacks in the options arguments.
    * @param {Object} eventSource Is a DOM object that can submit data.
-   * @param {options} options Is an object, {options:callback, options:param}.
+   * @param {options} options Is an object, {callback:funName, param:any}.
    */
   onSubmitEvent = (eventSource, ...options) => {
     eventSource.addEventListener('submit', (e) => {
