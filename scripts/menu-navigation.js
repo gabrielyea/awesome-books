@@ -1,8 +1,6 @@
 import listeners from './listeners.js';
 
 export default class MenuNavigation {
-  toAllBooks = document.querySelector('#nav-1');
-
   navigationLinks = document.querySelector('.nav-links-container').getElementsByTagName('li');
 
   navigationTargets = [document.querySelector('.books-container'),
@@ -15,12 +13,11 @@ export default class MenuNavigation {
   init = () => {
     this.populateDict();
     this.assignLinkToTarget();
-    // listeners.onClickEvent(this.toAllBooks,
-    //   { callback: this.displayMessage, param: this.linksDic[this.toAllBooks.id] });
   }
 
-  displayMessage = (obj) => {
-    console.log(obj);
+  displaySection = (section) => {
+    this.hideAll();
+    section.classList.toggle('hide');
   }
 
   populateDict = () => {
@@ -35,7 +32,13 @@ export default class MenuNavigation {
   assignLinkToTarget = () => {
     Object.entries(this.linksDic).forEach((dictionaryEntry) => {
       listeners.onClickEvent(dictionaryEntry[1].link,
-        { callback: this.displayMessage, param: dictionaryEntry[1].target });
+        { callback: this.displaySection, param: dictionaryEntry[1].target });
+    });
+  }
+
+  hideAll = () => {
+    this.navigationTargets.forEach((target) => {
+      target.classList.add('hide');
     });
   }
 }
