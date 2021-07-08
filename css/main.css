@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-/* GENERAL STYLE */
 .center {
   display: flex;
   flex-direction: column;
@@ -42,7 +41,6 @@ p {
   display: none;
 }
 
-/* ALL BOOKS CONTAINER */
 .book-list {
   width: 100%;
 }
@@ -76,7 +74,6 @@ p {
   margin: 2em;
 }
 
-/* CONTACT */
 .contact-information-list {
   align-items: flex-start;
   margin: 2em 4em;
@@ -88,7 +85,6 @@ p {
   font-size: 1.5em;
 }
 
-/* INPUT FORM */
 form {
   width: 50%;
 }

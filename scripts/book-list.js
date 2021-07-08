@@ -1,4 +1,6 @@
-// Wrap class, adds extra functionality to the array of books
+/**
+ * Wrap class, adds functionality to the array bookList.
+ */
 class BookList {
   bookList = [];
 
@@ -41,6 +43,5 @@ class BookList {
   }
 }
 
-// Class instance
 const bookList = new BookList();
 export { bookList as default };

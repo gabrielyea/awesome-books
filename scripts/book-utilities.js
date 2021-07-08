@@ -3,16 +3,15 @@ import listeners from './listeners.js';
 import storage from './localStorage.js';
 import Book from './book.js';
 
-// Utility class, Manages DOM elements, displays the books, adds functionality to buttons.
+/**
+ * Utility class, Manages DOM elements.
+ */
 export default class BookUtilities {
-  // ------DOM references------
   bookTemplate = document.getElementById('book-template');
 
   templateTarget = document.querySelector('.book-list');
 
   form = document.querySelector('form');
-
-  // ---------------------------
 
   /**
  * Adds the book to the bookList.
@@ -25,8 +24,6 @@ export default class BookUtilities {
 
   /**
  * Removes book from list by id.
- * Displays the updated list
- * Saves the data on localStorage.
  *
  * @param {number} id The id of the selected book.
  */
@@ -38,7 +35,6 @@ export default class BookUtilities {
 
   /**
  * Creates a clone based on the DOM template.
- * Fills the properties with data from book object.
  *
  * @param {Book} book an empty object type of Book, destructured.
  * @return {Book} a book object with properties filled.
@@ -51,7 +47,9 @@ export default class BookUtilities {
     return clone;
   }
 
-  // Appends all the books in the ul templateTarget.
+  /**
+ * Appends all books to the template target.
+ */
   displayAllBooks = () => {
     this.clearBookList();
     bookList.getList.forEach((book) => {
@@ -59,7 +57,6 @@ export default class BookUtilities {
     });
   }
 
-  // Gets called in displayAllBooks and removeBooks, clears the book list.
   clearBookList = () => {
     while (this.templateTarget.lastChild) {
       this.templateTarget.removeChild(this.templateTarget.lastChild);
@@ -67,7 +64,7 @@ export default class BookUtilities {
   }
 
   /**
- * Returns a book filled with data.
+ * Returns currently added book.
  * @return {Book} a book object with properties filled.
  */
   getBookData = () => {
