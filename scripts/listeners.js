@@ -27,6 +27,5 @@ class Listeners {
   }
 }
 
-// Class instance
 const listener = new Listeners();
 export { listener as default };
