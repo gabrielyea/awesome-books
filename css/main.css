@@ -17,6 +17,7 @@
 
 h2 {
   text-align: center;
+  margin: 1em;
 }
 
 .books-container li:nth-child(odd) {
@@ -46,6 +47,15 @@ h2 {
 .books-container hr {
   width: 250px;
   margin: 2em;
+}
+
+.contact-information {
+  width: 500px;
+}
+
+.contact-information-list {
+  align-items: flex-start;
+  margin: 2em 4em;
 }
 
 .btn-1 {

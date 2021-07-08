@@ -3,6 +3,10 @@ class Listeners {
   // only need the event name, the structure will be the same.
   // try that later!!
   // there is probably something like delegates or actions or C# like events <- listener structure
+  // Also try to copy the action.onAction += myFunc pattern, maybe is possible to stack up
+  // function calls on one event (Asynchronous).
+  // And also check if there is something like c++ operator overload on js.*
+  // No operator overload on js :C *
 
   /**
    * Register click event with optional parameters.
