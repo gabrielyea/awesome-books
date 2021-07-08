@@ -1,6 +1,3 @@
-/**
- * Wrap class, adds functionality to the array bookList.
- */
 class BookList {
   bookList = [];
 

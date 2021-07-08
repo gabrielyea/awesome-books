@@ -15,22 +15,11 @@ export default class MenuNavigation {
     this.registerLinksToClickEvent(this.linksDictionary);
   }
 
-  /**
-   * Toggles visibility of section object.
-   *
-   * @param {Object} section Is a DOM object representing a html section.
-   */
   displaySection = (section) => {
     this.hideAll();
     section.classList.toggle('hide');
   }
 
-  /**
-   * Populates a dictionary with this structure: {id: {link, target}}
-   *
-   * @param {Array} navLinks Its a collection of li elements.
-   * @param {Array} navTargets Its a collection of manually added sections.
-   */
   populateDictionary = (navLinks, navTargets) => {
     Object.entries(navLinks).forEach((element) => {
       this.linksDictionary[element[1].id] = {
@@ -40,11 +29,6 @@ export default class MenuNavigation {
     });
   }
 
-  /**
-   * Registers all links in dictionary to click event with callback function.
-   *
-   *  @param {Object} linkDictionary A dictionary: {id: {link:object, target:object}}.
-   */
   registerLinksToClickEvent = (linkDictionary) => {
     Object.entries(linkDictionary).forEach((dictionaryEntry) => {
       listeners.onClickEvent(dictionaryEntry[1].link,
