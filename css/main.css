@@ -15,9 +15,11 @@
   width: 100%;
 }
 
+h1,
 h2 {
   text-align: center;
   margin: 1em;
+  font-size: 4em;
 }
 
 .books-container li:nth-child(odd) {
@@ -49,6 +51,10 @@ h2 {
   margin: 2em;
 }
 
+.books-container {
+  width: 90vw;
+}
+
 .contact-information {
   width: 500px;
 }
@@ -65,4 +71,14 @@ h2 {
   padding: 1em;
   margin: 1em 0;
   align-self: flex-end;
+}
+
+.book-remove-btn {
+  padding: 1em 3em;
+  font-size: 1em;
+  box-shadow: 2px 2px 2px;
+}
+
+.hide {
+  display: none;
 }
