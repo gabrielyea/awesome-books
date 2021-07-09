@@ -11,23 +11,26 @@
 </head>
 
 <body class="center">
-  <nav>
+  <nav class="navBar black-border">
+    <p>Awesome Books</p>
     <ul class="nav-links-container">
-      <li id="nav-1"><a href="#">Section 1</a>
+      <li id="nav-1"><a href="#">List</a>
       </li>
-      <li id="nav-2"><a  href="#">Section 2</a>
+      <li id="nav-2"><a  href="#">Add new</a>
       </li>
-      <li id="nav-3"><a href="#">Section 3</a>
+      <li id="nav-3"><a href="#">Contact</a>
       </li>
     </ul>
   </nav>
 
+  <h3 class="time-display">time</h3>
+
   <section class="books-container center">
     <h1>All Awesome books</h1>
-    <ul class="book-list center">
+    <ul class="book-list center scroll black-border">
       <template id="book-template">
         <li class="book-list-element center">
-          <p class="book-desc">blabla</p>
+          <p class="book-desc"></p>
           <button class="book-remove-btn btn-1">Remove</button>
         </li>
       </template>
@@ -53,6 +56,10 @@
       <li class="contact-list-element">Our address: In dolore duis non ea cupidatat aute Lorem. Ullamco officia non enim ea quis labore laborum nostrud eu.</li>
     </ul>
   </section>
+
+  <footer class="black-border">
+    <p>Copyrigth:  Awesome Books All rights reserved</p>
+  </footer>
 
   <script type="module" src="scripts/main.js"></script>
 </body>
