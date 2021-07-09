@@ -10,12 +10,14 @@ const bookUtilities = new BookUtilities();
 
 const navigation = new MenuNavigation();
 
+const dateTime = DateTime;
+
 navigation.init();
 
-const dateTime = () => {
-  const dt = DateTime.now();
-  const dateTime = document.querySelector('.time-display');
-  dateTime.textContent = dt.toLocaleString(DateTime.DATETIME_MED);
+const setTime = () => {
+  const dt = dateTime.now();
+  const timeContainer = document.querySelector('.time-display');
+  timeContainer.textContent = dt.toLocaleString(DateTime.DATETIME_MED);
 };
 
 listeners.onSubmitEvent(form,
@@ -25,5 +27,5 @@ listeners.onSubmitEvent(form,
 window.addEventListener('load', () => {
   storage.loadInputData();
   bookUtilities.displayAllBooks();
-  dateTime();
+  setTime();
 });
