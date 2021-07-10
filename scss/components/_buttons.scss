@@ -1,21 +1,12 @@
 @use '../utils'as *;
 
 .btn-1 {
-  background-color: $main-theme-color;
+  background-color: $color-dark-2;
   border-radius: 4px;
   width: 60%;
   border: none;
   padding: 1em;
   margin: 2em 1em;
-}
-
-hr {
-  color: $main-theme-color;
-  width: 2em;
-  margin: 2em;
-  border-bottom: $main-theme-color 2px solid;
-  border-top: none;
-  text-align: center;
 }
 
 .burger-container {
@@ -66,6 +57,13 @@ hr {
       }
     }
   }
+}
+
+.book-remove-btn {
+  @extend %btn;
+
+  padding: 2em;
+  margin: 1em 0;
 }
 
 .btn-2 {

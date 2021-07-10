@@ -1,7 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.books-container {
+  margin: 0 1em;
+}
+
+body {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.book-remove-btn {
+  border-radius: 4px;
+  border: none;
+  padding: 1em;
+  margin: 2em 1em;
 }
 
 form {
@@ -11,32 +29,305 @@ form {
   align-items: center;
 }
 
-.book-list {
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.scroll {
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #f1f2da;
+  background-color: #00303b;
+  width: 100%;
+  justify-content: space-between;
+  height: 3em;
+}
+nav .nav-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+body {
+  background-color: #ffce96;
+}
+body .hide {
+  display: none;
+}
+
+h1 {
+  margin: 1em 0;
+}
+
+h3 {
+  text-align: right;
+  font-size: 0.8em;
+}
+
+footer {
+  color: #f1f2da;
+  background-color: #00303b;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+}
+footer p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  height: 100%;
+}
+
+.books-container .book-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1em;
-  margin: 1em;
-  list-style: none;
+  background-color: #ff7777;
+  width: 100%;
+  padding: 1em;
+  border-radius: 8px;
 }
-
-.book-list-element {
+.books-container .book-list .book-list-element {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  width: 100%;
 }
-.book-list-element hr {
-  width: 250px;
-  margin: 1em;
+.books-container .book-list .book-list-element:nth-child(odd) {
+  background-color: #f1f2da;
+  color: #00303b;
+}
+.books-container .book-list .book-list-element:nth-child(odd) .book-remove-btn {
+  color: #00303b;
+  background-color: #ffce96;
+}
+.books-container .book-list .book-list-element:nth-child(even) {
+  background-color: #00303b;
+  color: #f1f2da;
+}
+.books-container .book-list .book-list-element:nth-child(even) .book-remove-btn {
+  color: #f1f2da;
+  background-color: #ff7777;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.logo-5, .logo-4, .logo-3, .logo-2, .logo-1 {
+  background-image: url(../assets/LogoSpriteSheet-export.png);
+  width: 91px;
+  height: 22px;
+  display: block;
+  background-size: 100%;
+  opacity: 0.5;
+}
+
+.icon-5, .icon-4, .icon-3, .icon-2, .icon-1 {
+  width: 64px;
+  height: 64px;
+  background-image: url(../assets/Site-Icons-scaled.png);
+}
+
+.icon-1 {
+  animation: sprite1 1s steps(10) infinite;
+}
+@keyframes sprite1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -640px 0;
+  }
+}
+.icon-2 {
+  animation: sprite2 1s steps(10) infinite;
+}
+@keyframes sprite2 {
+  0% {
+    background-position: 0 -64px;
+  }
+  100% {
+    background-position: -640px -64px;
+  }
+}
+.icon-3 {
+  animation: sprite3 1s steps(10) infinite;
+}
+@keyframes sprite3 {
+  0% {
+    background-position: 0 -128px;
+  }
+  100% {
+    background-position: -640px -128px;
+  }
+}
+.icon-4 {
+  animation: sprite4 1s steps(10) infinite;
+}
+@keyframes sprite4 {
+  0% {
+    background-position: 0 -192px;
+  }
+  100% {
+    background-position: -640px -192px;
+  }
+}
+.icon-5 {
+  animation: sprite5 1s steps(10) infinite;
+}
+@keyframes sprite5 {
+  0% {
+    background-position: 0 -256px;
+  }
+  100% {
+    background-position: -640px -256px;
+  }
+}
+
+.logo-1 {
+  background-position: 0 0;
+}
+.logo-2 {
+  background-position: 0 -64px;
+}
+.logo-3 {
+  background-position: 0 -128px;
+}
+.logo-4 {
+  background-position: 0 -192px;
+}
+.logo-5 {
+  background-position: 0 -256px;
+}
+
+.event-logo {
+  background-image: url(../assets/event-logo-scaled.png);
+  width: 64px;
+  height: 64px;
+  background-size: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-5, .logo-4, .logo-3, .logo-2, .logo-1 {
+    background-image: url(../assets/LogoSpriteSheet-export.png);
+    width: 136px;
+    height: 32px;
+    display: block;
+    background-size: 100%;
+    opacity: 0.5;
+  }
+}
+.face-icon {
+  background-image: url("../assets/facebook.svg");
+  width: 16px;
+  height: 16px;
+  filter: white;
+}
+
+.twit-icon {
+  background-image: url("../assets/twitter.svg");
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+.btn-1 {
+  background-color: #00303b;
+  border-radius: 4px;
+  width: 60%;
+  border: none;
+  padding: 1em;
+  margin: 2em 1em;
+}
+
+.burger-container {
+  padding: 1em;
+  width: 50px;
+  height: 50px;
+}
+.burger-container .burger {
+  position: absolute;
+  background-color: grey;
+  width: 26px;
+  height: 5px;
+  top: 20px;
+  transition: all 1s ease;
+}
+.burger-container .burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 30px;
+  height: 5px;
+  background-color: grey;
+  transition: all 1s ease;
+}
+.burger-container .burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 30px;
+  height: 5px;
+  background-color: grey;
+  transition: all 1s ease;
+}
+.burger-container.show .burger {
+  background: transparent;
+  transform: rotate(360deg);
+}
+.burger-container.show .burger::before {
+  transform: translate(0, 8px) rotate(45deg);
+}
+.burger-container.show .burger::after {
+  transform: translate(0, -8px) rotate(-45deg);
+}
+
+.book-remove-btn {
+  padding: 2em;
+  margin: 1em 0;
+}
+
+.btn-2 {
+  background-color: transparent;
+  border: solid rgba(151, 151, 151, 0.5) 2px;
+  margin: 2em;
+  padding: 1.5em;
+  width: 95%;
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-1 {
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 1.5em;
+  }
+
+  .btn-2 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

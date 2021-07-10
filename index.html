@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Awesome Books</title>
   <meta name="description" content="">
@@ -11,30 +11,56 @@
 </head>
 
 <body>
+  <nav class="navBar black-border">
+    <div class="burger-container"><span class="burger"></span></div>
+    <ul class="nav-links-container">
+      <li id="nav-1"><a href="#">List</a>
+      </li>
+      <li id="nav-2"><a  href="#">Add new</a>
+      </li>
+      <li id="nav-3"><a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
-  <header>
-    <h1>Awesome Books!</h1>
-  </header>
+  <h3 class="time-display">time</h3>
 
-  <section>
-    <h2>All books</h2>
-    <ul class="book-list">
+  <section class="books-container">
+    <h1>All Awesome books</h1>
+    <ul class="book-list  scroll black-border">
       <template id="book-template">
-        <li class="book-list-element">
-          <p class="book-title">blabla</p>
-          <p class="book-author">blbibli</p>
+        <li class="book-list-element ">
+          <p class="book-desc"></p>
           <button class="book-remove-btn">Remove</button>
-          <hr>
         </li>
       </template>
     </ul>
   </section>
 
-  <form method="post">
-    <input type="text" name="title" placeholder="Title">
-    <input type="text" name="author" placeholder="Author">
-    <input type="submit" value="Add">
-  </form>
+  <section class="input-container  hide">
+    <h2>Add new book</h2>
+    <form class="" method="post">
+      <input class="input" type="text" name="title" placeholder="Title" required>
+      <input class="input" type="text" name="author" placeholder="Author" required>
+      <input class="btn-1" type="submit" value="Add">
+    </form>
+  </section>
+
+  <section class="contact-information  hide">
+    <h2>Contact information</h2>
+    <p>Do you have any questions or just want to say "Hello"?<br>
+    You can reach out to us!</p>
+    <ul class="contact-information-list ">
+      <li class="contact-list-element">Our email: emailBlabla@blabla.com</li>
+      <li class="contact-list-element">Our phone number: 000000000000000</li>
+      <li class="contact-list-element">Our address: In dolore duis non ea cupidatat aute Lorem. Ullamco officia non enim ea quis labore laborum nostrud eu.</li>
+    </ul>
+  </section>
+
+  <footer class="black-border">
+    <p>Copyrigth:  Awesome Books All rights reserved</p>
+  </footer>
+
   <script type="module" src="scripts/main.js"></script>
 </body>
 

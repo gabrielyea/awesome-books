@@ -1,5 +1,5 @@
 @use '../utils/' as *;
 
-body {
+section {
   @include flexCenter;
 }

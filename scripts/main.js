@@ -1,18 +1,31 @@
-import Book from './book.js';
 import BookUtilities from './book-utilities.js';
 import storage from './localStorage.js';
+import listeners from './listeners.js';
+import MenuNavigation from './menu-navigation.js';
+import luxon from './libraries/luxon.js';
 
 const form = document.querySelector('form');
 
 const bookUtilities = new BookUtilities();
 
-form.addEventListener('submit', (source) => {
-  bookUtilities.saveBook(new Book(null, form.title.value, form.author.value));
-  bookUtilities.displayAllBooks();
-  source.preventDefault();
-});
+const navigation = new MenuNavigation();
+
+const dateTime = luxon;
+
+navigation.init();
+
+const setTime = () => {
+  const dt = dateTime.now();
+  const timeContainer = document.querySelector('.time-display');
+  timeContainer.textContent = dt.toLocaleString(dateTime.DATETIME_MED);
+};
+
+listeners.onSubmitEvent(form,
+  { callback: bookUtilities.saveBook },
+  { callback: bookUtilities.displayAllBooks });
 
 window.addEventListener('load', () => {
   storage.loadInputData();
   bookUtilities.displayAllBooks();
+  setTime();
 });

@@ -1,9 +1,25 @@
-$main-theme-color: #ea4f36;
-$dark-background-color: #303030;
+@use '../base/fonts'as *;
 
-%generalPadding {
-  padding-left: 24px;
-  padding-right: 24px;
+$color-ligth-1: #f1f2da;
+$color-ligth-2: #ffce96;
+$color-dark-1: rgb(255, 119, 119);
+$color-dark-2: #00303b;
+
+%generalSpacing {
+  margin: 0 1em;
+}
+
+%mainFont {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+%btn {
+  border-radius: 4px;
+  border: none;
+  padding: 1em;
+  margin: 2em 1em;
 }
 
 @mixin pixelBorder() {
@@ -20,21 +36,8 @@ $dark-background-color: #303030;
   border-image-width: $size $size;
 }
 
-@mixin sectionTitle($size: 56px, $height: 64px, $color: $color_main_orange) {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: normal;
+@mixin styleFont($size: 1em, $color: $color-dark-2) {
   font-size: $size;
-  line-height: $height;
-  color: $color;
-}
-
-@mixin robotoTitle($sice, $height, $color) {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: $sice;
-  line-height: $height;
   color: $color;
 }
 
@@ -43,14 +46,6 @@ $dark-background-color: #303030;
   flex-direction: $direction;
   justify-content: center;
   align-items: center;
-}
-
-@mixin projectParagraph($sice: 16px, $height: 24px, $color: $color_third_text) {
-  font-style: normal;
-  font-weight: normal;
-  font-size: $sice;
-  line-height: $height;
-  color: $color;
 }
 
 @mixin desktopResolution {
@@ -67,4 +62,9 @@ $dark-background-color: #303030;
   height: $sizeY;
   background-repeat: no-repeat;
   margin-left: 10px;
+}
+
+@mixin setColors($color, $backgroundColor) {
+  color: $color;
+  background-color: $backgroundColor;
 }

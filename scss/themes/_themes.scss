@@ -1,0 +1,13 @@
+@use '../utils/'as *;
+
+@mixin setTheme($theme: ligth) {
+  @if $theme == ligth {
+    background-color: $color-ligth-1;
+    color: $color-dark-2;
+  }
+
+  @else {
+    background-color: $color-dark-2;
+    color: $color-ligth-1;
+  }
+}

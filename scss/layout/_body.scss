@@ -1,0 +1,11 @@
+@use '../utils/' as *;
+
+body {
+  @extend %mainFont;
+
+  background-color: $color-ligth-2;
+
+  .hide {
+    display: none;
+  }
+}

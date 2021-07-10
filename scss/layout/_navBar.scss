@@ -1,0 +1,16 @@
+@use '../utils/'as *;
+
+nav {
+  @include flexCenter(row);
+  @include setColors($color-ligth-1, $color-dark-2);
+
+  width: 100%;
+  justify-content: space-between;
+  height: 3em;
+
+  .nav-links-container {
+    @include flexCenter(row);
+
+    gap: 1em;
+  }
+}
