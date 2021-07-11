@@ -1,0 +1,22 @@
+@use '../utils/'as *;
+
+.contact-information {
+  @extend %generalSpacing;
+
+  .information-container {
+    @include setColors($color-ligth-1, $color-dark-2);
+    @include flexCenter;
+
+    gap: 1em;
+    border-radius: 4px;
+    padding: 1em;
+
+    ul {
+      list-style: disc;
+
+      li {
+        margin: 1em;
+      }
+    }
+  }
+}

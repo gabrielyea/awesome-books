@@ -5,11 +5,11 @@
   padding: 0;
 }
 
-.books-container {
+.contact-information, .input-container, .books-container {
   margin: 0 1em;
 }
 
-body {
+.input-container form input, body {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -56,6 +56,8 @@ nav {
   width: 100%;
   justify-content: space-between;
   height: 3em;
+  position: fixed;
+  top: 0;
 }
 nav .nav-links-container {
   display: flex;
@@ -74,8 +76,12 @@ nav a {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url("../../assets/Ilustration-2.png"), url("../../assets/Ilustration-1.png");
-  background-position: top, bottom;
+  background-position: top right, bottom left;
   background-repeat: no-repeat;
   background-color: #ffce96;
   height: 100vh;
@@ -84,13 +90,23 @@ body .hide {
   display: none;
 }
 
-h1 {
-  margin: 1em 0;
+h1,
+h2 {
+  color: #00303b;
+  background-color: transparent;
+  font-size: 2em;
+  font-weight: normal;
+  font-style: normal;
+  color: #00303b;
+  margin: 0 0 1em;
 }
 
 h3 {
   text-align: right;
   font-size: 0.8em;
+  position: fixed;
+  top: 50px;
+  width: 100%;
 }
 
 footer {
@@ -110,6 +126,9 @@ footer p {
   height: 100%;
 }
 
+.books-container {
+  width: 90vw;
+}
 .books-container .book-list {
   display: flex;
   flex-direction: column;
@@ -120,6 +139,7 @@ footer p {
   width: 100%;
   padding: 1em;
   border-radius: 8px;
+  border: #00303b solid 2px;
 }
 .books-container .book-list .book-list-element {
   display: flex;
@@ -153,6 +173,63 @@ footer p {
   font-weight: bold;
   font-style: normal;
   color: "";
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+}
+.input-container form {
+  color: #f1f2da;
+  background-color: #00303b;
+  padding: 1em;
+  width: 100%;
+  border-radius: 4px;
+  border: #f1f2da solid 2px;
+}
+.input-container form label {
+  font-size: 2em;
+  text-align: left;
+  width: 100%;
+}
+.input-container form input {
+  color: #00303b;
+  background-color: #f1f2da;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: normal;
+  color: #00303b;
+  border: none;
+  width: 100%;
+  height: 1.5em;
+  border-radius: 4px;
+}
+.input-container form input.btn-1 {
+  color: #f1f2da;
+  background-color: #ff7777;
+  height: 100%;
+  margin: 1em 0 0 0;
+}
+
+.contact-information .information-container {
+  color: #f1f2da;
+  background-color: #00303b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  border-radius: 4px;
+  padding: 1em;
+}
+.contact-information .information-container ul {
+  list-style: disc;
+}
+.contact-information .information-container ul li {
+  margin: 1em;
 }
 
 .logo-5, .logo-4, .logo-3, .logo-2, .logo-1 {

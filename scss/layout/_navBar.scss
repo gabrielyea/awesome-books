@@ -7,6 +7,8 @@ nav {
   width: 100%;
   justify-content: space-between;
   height: 3em;
+  position: fixed;
+  top: 0;
 
   .nav-links-container {
     @include flexCenter(row);
