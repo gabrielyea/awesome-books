@@ -12,5 +12,12 @@ nav {
     @include flexCenter(row);
 
     gap: 1em;
+    padding: 1em;
+  }
+
+  a {
+    @include styleFont(0.8em, $color-ligth-1, '', '');
+
+    text-decoration: none;
   }
 }

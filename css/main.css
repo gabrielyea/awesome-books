@@ -41,7 +41,7 @@ ul {
 }
 
 .scroll {
-  height: 500px;
+  height: 450px;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -63,10 +63,22 @@ nav .nav-links-container {
   justify-content: center;
   align-items: center;
   gap: 1em;
+  padding: 1em;
+}
+nav a {
+  font-size: 0.8em;
+  font-weight: "";
+  font-style: "";
+  color: #f1f2da;
+  text-decoration: none;
 }
 
 body {
+  background-image: url("../../assets/Ilustration-2.png"), url("../../assets/Ilustration-1.png");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
   background-color: #ffce96;
+  height: 100vh;
 }
 body .hide {
   display: none;
@@ -103,7 +115,7 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 0.2em;
   background-color: #ff7777;
   width: 100%;
   padding: 1em;
@@ -125,6 +137,10 @@ footer p {
 .books-container .book-list .book-list-element:nth-child(odd) .book-remove-btn {
   color: #00303b;
   background-color: #ffce96;
+  font-size: "";
+  font-weight: bold;
+  font-style: normal;
+  color: "";
 }
 .books-container .book-list .book-list-element:nth-child(even) {
   background-color: #00303b;
@@ -133,6 +149,10 @@ footer p {
 .books-container .book-list .book-list-element:nth-child(even) .book-remove-btn {
   color: #f1f2da;
   background-color: #ff7777;
+  font-size: "";
+  font-weight: bold;
+  font-style: normal;
+  color: "";
 }
 
 .logo-5, .logo-4, .logo-3, .logo-2, .logo-1 {
