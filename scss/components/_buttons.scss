@@ -1,4 +1,5 @@
 @use '../utils'as *;
+@use "sass:color";
 
 .btn-1 {
   background-color: $color-dark-2;
@@ -7,6 +8,14 @@
   border: none;
   padding: 1em;
   margin: 2em 1em;
+
+  &:active {
+    background-color: red;
+  }
+
+  &:hover {
+    background-color: blue;
+  }
 }
 
 .burger-container {
@@ -64,15 +73,6 @@
 
   padding: 2em;
   margin: 1em 0;
-}
-
-.btn-2 {
-  background-color: transparent;
-  border: solid rgba(151, 151, 151, 0.5) 2px;
-  margin: 2em;
-  padding: 1.5em;
-  width: 95%;
-  border-radius: 4px;
 }
 
 @include desktopResolution {

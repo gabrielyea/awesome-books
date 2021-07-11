@@ -213,6 +213,14 @@ footer p {
   height: 100%;
   margin: 1em 0 0 0;
 }
+.input-container form input.btn-1:hover {
+  filter: hue-rotate(45deg);
+  box-shadow: #f1f2da 4px 4px 5px;
+}
+.input-container form input.btn-1:active {
+  filter: hue-rotate(-45deg);
+  box-shadow: #f1f2da 4px 4px 5px;
+}
 
 .contact-information .information-container {
   color: #f1f2da;
@@ -358,6 +366,12 @@ footer p {
   padding: 1em;
   margin: 2em 1em;
 }
+.btn-1:active {
+  background-color: red;
+}
+.btn-1:hover {
+  background-color: blue;
+}
 
 .burger-container {
   padding: 1em;
@@ -404,15 +418,6 @@ footer p {
 .book-remove-btn {
   padding: 2em;
   margin: 1em 0;
-}
-
-.btn-2 {
-  background-color: transparent;
-  border: solid rgba(151, 151, 151, 0.5) 2px;
-  margin: 2em;
-  padding: 1.5em;
-  width: 95%;
-  border-radius: 4px;
 }
 
 @media only screen and (min-width: 768px) {

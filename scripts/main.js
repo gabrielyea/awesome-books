@@ -22,7 +22,8 @@ const setTime = () => {
 
 listeners.onSubmitEvent(form,
   { callback: bookUtilities.saveBook },
-  { callback: bookUtilities.displayAllBooks });
+  { callback: bookUtilities.displayAllBooks },
+  { callback: bookUtilities.clearBookData });
 
 window.addEventListener('load', () => {
   storage.loadInputData();

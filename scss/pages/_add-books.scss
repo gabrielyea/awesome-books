@@ -37,6 +37,16 @@
 
         height: 100%;
         margin: 1em 0 0 0;
+
+        &:hover {
+          filter: hue-rotate(45deg);
+          box-shadow: $color-ligth-1 4px 4px 5px;
+        }
+
+        &:active {
+          filter: hue-rotate(-45deg);
+          box-shadow: $color-ligth-1 4px 4px 5px;
+        }
       }
     }
   }

@@ -46,4 +46,11 @@ export default class BookUtilities {
     const book = new Book(bookList.getList.length, this.form.title.value, this.form.author.value);
     return book;
   }
+
+  clearBookData = () => {
+    const inputs = this.form.getElementsByClassName('input');
+    Object.entries(inputs).forEach((inp) => {
+      inp[1].value = '';
+    });
+  }
 }
