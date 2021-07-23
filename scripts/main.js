@@ -30,3 +30,7 @@ window.addEventListener('load', () => {
   bookUtilities.displayAllBooks();
   setTime();
 });
+
+document.querySelector('.test').addEventListener('click', () => {
+  document.querySelector('.scroll').scroll({ top: 0, behavior: 'smooth' });
+});

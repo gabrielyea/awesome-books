@@ -9,6 +9,7 @@
   .book-list {
     @include flexCenter;
 
+    justify-content: flex-start;
     gap: 0.2em;
     background-color: $color-dark-1;
     width: 100%;
@@ -19,9 +20,10 @@
     .book-list-element {
       @include flexCenter(row);
 
-      justify-content: space-around;
+      justify-content: space-between;
       border-radius: 8px;
       width: 100%;
+      padding: 0 1em;
     }
 
     .book-list-element:nth-child(odd) {
