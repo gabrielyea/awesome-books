@@ -1,0 +1,47 @@
+@use '../utils/'as *;
+@use '../themes/themes'as *;
+
+.books-container {
+  @extend %generalSpacing;
+
+  width: 90vw;
+
+  .book-list {
+    @include flexCenter;
+
+    justify-content: flex-start;
+    gap: 0.2em;
+    background-color: $color-dark-1;
+    width: 100%;
+    padding: 1em;
+    border-radius: 8px;
+    border: $color-dark-2 solid 2px;
+
+    .book-list-element {
+      @include flexCenter(row);
+
+      justify-content: space-between;
+      border-radius: 8px;
+      width: 100%;
+      padding: 0 1em;
+    }
+
+    .book-list-element:nth-child(odd) {
+      @include setTheme(ligth);
+
+      .book-remove-btn {
+        @include setColors($color-dark-2, $color-ligth-2);
+        @include styleFont( '','',bold, normal);
+      }
+    }
+
+    .book-list-element:nth-child(even) {
+      @include setTheme(dark);
+
+      .book-remove-btn {
+        @include setColors($color-ligth-1, $color-dark-1);
+        @include styleFont( '','',bold, normal);
+      }
+    }
+  }
+}

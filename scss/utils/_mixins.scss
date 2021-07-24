@@ -1,0 +1,51 @@
+
+@use './variables' as *;
+
+@mixin pixelBorder() {
+  border: solid transparent; // need this to work on chorme!!!
+  border-image: url(../assets/frame-1-scaled.png);
+  border-image-slice: 30;
+  border-image-width: 32px 32px;
+}
+
+@mixin chessBorder($slice: 8, $size: 16px) {
+  border: solid transparent;
+  border-image: url(../assets/frame-2-scaled.png);
+  border-image-slice: $slice;
+  border-image-width: $size $size;
+}
+
+@mixin styleFont($size: 1em, $color: $color-dark-2, $weigth: normal, $style: normal) {
+  font-size: $size;
+  font-weight: $weigth;
+  font-style: $style;
+  color: $color;
+}
+
+@mixin flexCenter($direction:column) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin desktopResolution {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin customButtonIcon($path, $sizeX, $sizeY) {
+  background-image: url($path);
+  vertical-align: bottom;
+  display: inline-block;
+  width: $sizeX;
+  height: $sizeY;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+
+@mixin setColors($color, $backgroundColor) {
+  color: $color;
+  background-color: $backgroundColor;
+}

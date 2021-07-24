@@ -1,0 +1,23 @@
+@use '../base/fonts'as *;
+
+$color-ligth-1: #f1f2da;
+$color-ligth-2: #ffce96;
+$color-dark-1: rgb(255, 119, 119);
+$color-dark-2: #00303b;
+
+%generalSpacing {
+  margin: 0 1em;
+}
+
+%mainFont {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+%btn {
+  border-radius: 4px;
+  border: none;
+  padding: 1em;
+  margin: 2em 1em;
+}

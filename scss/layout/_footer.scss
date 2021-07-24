@@ -1,0 +1,17 @@
+@use '../utils/' as *;
+
+footer {
+  @include setColors($color-ligth-1, $color-dark-2);
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+
+  p {
+    @include flexCenter;
+
+    font-size: 0.8em;
+    height: 100%;
+  }
+}
