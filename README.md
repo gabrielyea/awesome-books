@@ -12,41 +12,16 @@ A website where users can add or remove books from a list was created using java
 - Javascript
 - Lots of love :heart:
 
-## Getting Started
-To get a local copy up and running follow these simple example steps:
-- Open Terminal.
-- Change the current working directory to the location you want the cloned directory.
-- Enter the following:
-```
-$ git clone git@github.com:amiraabouhadid/awesome-books.git.
-
-```
-- Press Enter to create your local clone.
-- run ```cd awesome-books```
-- now you an open the project with any code editor and go live or simply open your localhost in the browser.
-
 
 ### Prerequisites
 - GitHub
 - Git
 
 ## Author:
-
- 👤 **Amira Abouhadid**
-
- - GitHub: [@amiraabouhadid](https://github.com/amiraabouhadid)
- - Twitter: [@AbouhadidAmira](https://twitter.com/AbouhadidAmira)
- - LinkedIn: [amira-abouhadid](https://www.linkedin.com/in/amira-abouhadid/)
-
  👤 **Gabriel Rendon*
 
  - GitHub: [@gabrielyea](https://github.com/gabrielyea)
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/amiraabouhadid/awesome-books/issues).
 
 ## Show your support
 
