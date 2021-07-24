@@ -16,6 +16,7 @@
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
     "luxon": "^1.27.0",
+    "sass-mq": "^5.0.1",
     "sass-watch": "^0.1.0"
   }
 }

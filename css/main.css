@@ -80,11 +80,24 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../assets/Ilustration-2.png"), url("../../assets/Ilustration-1.png");
-  background-position: top right, bottom left;
-  background-repeat: no-repeat;
-  background-color: #ffce96;
-  height: 100vh;
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  body {
+    background-image: url("../../assets/Ilustration-2.png"), url("../../assets/Ilustration-1.png");
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+    background-color: #ffce96;
+    height: 100vh;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    background-image: url("../../assets/Ilustration-3.png");
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+    background-color: #ffce96;
+    height: 100vh;
+  }
 }
 body .hide {
   display: none;
